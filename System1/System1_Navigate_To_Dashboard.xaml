@@ -1,0 +1,91 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="System1_Navigate_To_Dashboard" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1355.3333333333333,711.3333333333334" sap2010:WorkflowViewState.IdRef="System1_Navigate_To_Dashboard_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence sap:VirtualizedContainerService.HintSize="546,515.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Avail to Sell CS and LC.xlsx - Excel" sap:VirtualizedContainerService.HintSize="484,404.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="8627b013-0b6e-4423-870a-2d32aee17a56" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,107.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1911, -9, 2578, 1408" Arguments="c:\users\tri vu\documents\sap_ibp\avail to sell cs and lc.xlsx" FilePath="C:\Program Files (x86)\Microsoft Office\root\Office16\excel.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAMtSURBVGhD7ZnbS1RRGMV9CqKoPyBwHOshCl8SoiKoxtt0eSio1C5gCZKgVuOdyi5mGvVg6GgRWZkSVIpdDS8YqGFojCFEqEhTiV2QJC0zlK+1z/nOOHlSciZ1D5wFC2b25nx7/fY5e+85jJ8hQ5LKlBQyDw42JVpi4Xz/REu9f4Klj7vlUsDR0BVwpOlI6GnT4ZBK+A3Ck+JEi2IAEACIL5kbmVMjlphTwq0ByeE2+HqALawNHkV4EgYAIbzquQQITLcuNKdb18Jx5rSIIrgR4QdgAgAhvGpbmGpZAAIzNj8KzLA6AUAIrzoNoYVF+P8A4Lpm+u6BS+EFHFcvABAASFIAzaUcV6/ZAPBU7/r7tPF6OK5eMgMIaeNxXL0MgGmuAU3ubRPtLq2N4+plAMgKcLDkBGXey6fzj69R5t18HcADRwN9Gx5SBrnz4umUAN7IY4CTVXYuQUrQ5RnbXABbLh7iHqLRsTHalBMjH8DK49upf2iAyxAlleW6ACraarmVqKK1Rs5HSPhSTRmXIWrucigAq7J20vCvn0qbMvvnePZlBAg+tRthR7gU0YbcGLrwpIS/EVW9rJN/F7rRVMWliApqy+ntl17ls5j9sLxY+Q+yjXkHlLBC7mtCzP6/bqPeyGsA4YftDVxOlTb7PnOQJdzK4XKqxGMk/UHmDiB2oInaV5zmGwC77DYuRdT50cmfiFp7OnxjDTR3t3Mpovib2dQ/OL6QxV2QGiCqOIXLqM/90lQrFdXd5hb1Lkj9CLnPflZloXISrzuz17WtCkXbU+QEiLo8PvvfR35Q0LEdrt9C1R2N3EPU0v1KTgD32RensRKeASLtydyjKroweUoAb+QRwDK07b+aqbwPCK/Jjv4DQLj+dQt1vO9UFnVTp0MuAG0NaOeA8UqpXQNrcm+baHdpbRxXLwNA5oPMAPASoPfrJ208J8fVa7bXgIcu57h6SQ7ghMvhRRxXLwBUA+DDTALwUDMrACxG+PVwPMJfgZ8j/KDPAEwmAPgDYCvCp8Li7x6HTwFMJoQPgvcA4CzC34e7fArgb0L4+fBqhI+DCwDwDACfuduQITnk5/cbI54OuLatBOIAAAAASUVORK5CYII=" InformativeScreenshot="60ff76a64b4c498530da1a4c081883d6.png" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Avail to Sell CS and LC.xlsx - Excel' /&gt;" Title="Avail to Sell CS and LC.xlsx - Excel" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
