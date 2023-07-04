@@ -1,4 +1,4 @@
-<Activity mc:Ignorable="sap sap2010" x:Class="System1_Navigate_To_Dashboard" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1355.3333333333333,711.3333333333334" sap2010:WorkflowViewState.IdRef="System1_Navigate_To_Dashboard_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+<Activity mc:Ignorable="sap sap2010" x:Class="System1_Navigate_To_Dashboard" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="1158,812" sap2010:WorkflowViewState.IdRef="System1_Navigate_To_Dashboard_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
   <TextExpression.NamespacesForImplementation>
     <sco:Collection x:TypeArguments="x:String">
       <x:String>System.Activities</x:String>
@@ -62,19 +62,19 @@
       <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
     </sco:Collection>
   </TextExpression.ReferencesForImplementation>
-  <Sequence sap:VirtualizedContainerService.HintSize="546,515.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_4">
+  <Sequence sap:VirtualizedContainerService.HintSize="546,433" sap2010:WorkflowViewState.IdRef="Sequence_4">
     <sap:WorkflowViewStateService.ViewState>
       <scg:Dictionary x:TypeArguments="x:String, x:Object">
         <x:Boolean x:Key="IsExpanded">True</x:Boolean>
       </scg:Dictionary>
     </sap:WorkflowViewStateService.ViewState>
-    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Avail to Sell CS and LC.xlsx - Excel" sap:VirtualizedContainerService.HintSize="484,404.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="8627b013-0b6e-4423-870a-2d32aee17a56" Version="V2">
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: ACME System 1 - Work Items" sap:VirtualizedContainerService.HintSize="484,322" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="DebuggerApi" ScopeGuid="8627b013-0b6e-4423-870a-2d32aee17a56" Version="V2">
       <uix:NApplicationCard.Body>
         <ActivityAction x:TypeArguments="x:Object">
           <ActivityAction.Argument>
             <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
           </ActivityAction.Argument>
-          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,107.33333333333333" sap2010:WorkflowViewState.IdRef="Sequence_3">
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,105" sap2010:WorkflowViewState.IdRef="Sequence_3">
             <sap:WorkflowViewStateService.ViewState>
               <scg:Dictionary x:TypeArguments="x:String, x:Object">
                 <x:Boolean x:Key="IsExpanded">True</x:Boolean>
@@ -84,7 +84,7 @@
         </ActivityAction>
       </uix:NApplicationCard.Body>
       <uix:NApplicationCard.TargetApp>
-        <uix:TargetApp Area="1911, -9, 2578, 1408" Arguments="c:\users\tri vu\documents\sap_ibp\avail to sell cs and lc.xlsx" FilePath="C:\Program Files (x86)\Microsoft Office\root\Office16\excel.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAADAAAAAwCAYAAABXAvmHAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAMtSURBVGhD7ZnbS1RRGMV9CqKoPyBwHOshCl8SoiKoxtt0eSio1C5gCZKgVuOdyi5mGvVg6GgRWZkSVIpdDS8YqGFojCFEqEhTiV2QJC0zlK+1z/nOOHlSciZ1D5wFC2b25nx7/fY5e+85jJ8hQ5LKlBQyDw42JVpi4Xz/REu9f4Klj7vlUsDR0BVwpOlI6GnT4ZBK+A3Ck+JEi2IAEACIL5kbmVMjlphTwq0ByeE2+HqALawNHkV4EgYAIbzquQQITLcuNKdb18Jx5rSIIrgR4QdgAgAhvGpbmGpZAAIzNj8KzLA6AUAIrzoNoYVF+P8A4Lpm+u6BS+EFHFcvABAASFIAzaUcV6/ZAPBU7/r7tPF6OK5eMgMIaeNxXL0MgGmuAU3ubRPtLq2N4+plAMgKcLDkBGXey6fzj69R5t18HcADRwN9Gx5SBrnz4umUAN7IY4CTVXYuQUrQ5RnbXABbLh7iHqLRsTHalBMjH8DK49upf2iAyxAlleW6ACraarmVqKK1Rs5HSPhSTRmXIWrucigAq7J20vCvn0qbMvvnePZlBAg+tRthR7gU0YbcGLrwpIS/EVW9rJN/F7rRVMWliApqy+ntl17ls5j9sLxY+Q+yjXkHlLBC7mtCzP6/bqPeyGsA4YftDVxOlTb7PnOQJdzK4XKqxGMk/UHmDiB2oInaV5zmGwC77DYuRdT50cmfiFp7OnxjDTR3t3Mpovib2dQ/OL6QxV2QGiCqOIXLqM/90lQrFdXd5hb1Lkj9CLnPflZloXISrzuz17WtCkXbU+QEiLo8PvvfR35Q0LEdrt9C1R2N3EPU0v1KTgD32RensRKeASLtydyjKroweUoAb+QRwDK07b+aqbwPCK/Jjv4DQLj+dQt1vO9UFnVTp0MuAG0NaOeA8UqpXQNrcm+baHdpbRxXLwNA5oPMAPASoPfrJ208J8fVa7bXgIcu57h6SQ7ghMvhRRxXLwBUA+DDTALwUDMrACxG+PVwPMJfgZ8j/KDPAEwmAPgDYCvCp8Li7x6HTwFMJoQPgvcA4CzC34e7fArgb0L4+fBqhI+DCwDwDACfuduQITnk5/cbI54OuLatBOIAAAAASUVORK5CYII=" InformativeScreenshot="60ff76a64b4c498530da1a4c081883d6.png" Selector="&lt;wnd app='excel.exe' cls='XLMAIN' title='Avail to Sell CS and LC.xlsx - Excel' /&gt;" Title="Avail to Sell CS and LC.xlsx - Excel" />
+        <uix:TargetApp Area="-8, -8, 1860, 1041" BrowserType="Chrome" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAReSURBVFhHvZdtbFNlFMcf3SxUfI0miLAEWdShCV+EGD9oUJBJAobwQb8IGklkKEQkcy8MZK90tGsnZbxsvkDmxsYkS8QFPhDYLIy+sbv2rhW3dYPFbGyVbYwJJMu2wzm3Prd317ZCc+uHf9vnPC/n13PPc57nMrZX6EPdQo39zyKf1wgAZJWQ2sJtzYVrkw+lDT9G5UbBZWB5TmC7XIlRHgnXJ4hSyecwAYwxAzawM/1EoKFSvLEh97eBjOw4xedmNg9k7LSFRO2sloEMg2Po0x3n+4tYMUaiUIr0SAiAiL5xwfrGqyvSt69hiZZuXzv6cwP+cQVAoRveqQtsizRBS33vHV6cTAD5agA0rG7o+SLSpHg0ODG9aGlFR+vy+kCl0l4p3HgpKkC6RgAA8GxSqQfY5zZgm22wq3XwFO+zOIeiA6z5OQyQctBXpTd6BdwZwrsNPVZuV2vJD3/YWOFl9xNmr5hULGwiW8v1OxvZpmZg5SKw7a2Y8e3Ax5c5g9EB1p4MA+hNnjssH7dlth2WHusMcrta8yt8wHLswIpwbEHbUW5P/e4KsK0XJDX2jBVw+30DPGkR7awIt8pOJ7xR03WO29VadNg/Ke1tLDJPfyvuUfbtbu5fn+MIvqK0HYmVAzMAzKJTAdCsXEQpBJimMQQwx+TNjzRm6PbUQ/x3lWc4cQC60nYZYOEhP+jxsTxqbAfMp3JurxZHNAY44p/iAHpFBB63eIF9jbmBJVhn9Bi5vdanPYAcASUA/mtgu7H24+H2nLVDttdoDZAaBWAB7Q4CwLo/d38cAE9Z7hsg4iOIC+B9BcDsfR6XdGrhFltW3XWe29VKq/JPSAAGHFsiyPs9LgBlJcQk8mGFA5ZlhxX1gTPcrlbKobCjOWavidvjAnjreEAG+Ph03yn21SVgmZfg9druAW5XK9mI2Y5HOct2gFUIbuH25w/EAfBmTRjgqH9ks1RK6VDBx9B5a+IF3sc1DbCE5TqoBEvb7drfE/N431xrx4MDrKwPA5D0Zeg8FxehwXvckHfh+icmVzCt7vfRxTkt/VmMzopinLv1IrxW03VTOTdaBKpjAbynOo6b/hzfwj46hxmO/ZQPGGZdGYac2plYZOgOSU4+s8HoFKxSzk2hHKBHg3VgntUnnxExI6AGIH3Y1NfGdmAufInHKk2ik48umBgRsusK3LDhbL9c6biYAZ1suyglMUbpILfX+R8QgNTUO77sg8beX58xeuAxrO3JeL7Pt4jjG3+5+lPf3UldpDlvH+++mXqgY/LlSj8srw1kcfsxMcZhFA1ASx0WYgDglSzhl9IfPcNpUQHwUro20iStNQsf47+v5ZjN6072lpy4Mrqw3BV81eSYKSPKjCq1D0ptc4Qx/6UK4a8XjY6hdcmUoJi86FsCCL2aIUQSdszGRHsYvylMWusRFNuLotoReh2UXs1CDXpXo9cl2l5ElwjxtblPEn50o0ZQQUmGf74ToZlro0+h8x4tMHhuvyezngAAAABJRU5ErkJggg==" InformativeScreenshot="ba0f05d2ae93d0f7c7b1a2d10dd40157.jpg" Selector="&lt;html app='chrome.exe' title='ACME System 1 - Work Items' /&gt;" Title="Avail to Sell CS and LC.xlsx - Excel" Url="https://acme-test.uipath.com/home" />
       </uix:NApplicationCard.TargetApp>
     </uix:NApplicationCard>
   </Sequence>

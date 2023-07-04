@@ -1,0 +1,147 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="SHA1_ProcessHash" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:sco="clr-namespace:System.Collections.ObjectModel;assembly=System.Private.CoreLib" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <x:Members>
+    <x:Property Name="in_HashFormula" Type="InArgument(x:String)" />
+    <x:Property Name="out_HashResult" Type="OutArgument(x:String)" />
+  </x:Members>
+  <VisualBasic.Settings>
+    <x:Null />
+  </VisualBasic.Settings>
+  <sap:VirtualizedContainerService.HintSize>1158,963</sap:VirtualizedContainerService.HintSize>
+  <sap2010:WorkflowViewState.IdRef>SHA1_ProcessHash_1</sap2010:WorkflowViewState.IdRef>
+  <TextExpression.NamespacesForImplementation>
+    <sco:Collection x:TypeArguments="x:String">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Net.Mail</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities.Models</x:String>
+    </sco:Collection>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <sco:Collection x:TypeArguments="AssemblyReference">
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Data.DataSetExtensions</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Drawing.Primitives</AssemblyReference>
+      <AssemblyReference>System.Drawing.Common</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Testing.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Runtime.InteropServices</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+    </sco:Collection>
+  </TextExpression.ReferencesForImplementation>
+  <Sequence DisplayName="SHA1_ProcessHash" sap:VirtualizedContainerService.HintSize="546,858" sap2010:WorkflowViewState.IdRef="Sequence_1">
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: SHA-1 Hash Generator Online Tool" sap:VirtualizedContainerService.HintSize="484,747" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" InteractionMode="DebuggerApi" ScopeGuid="870715f0-b5ac-465f-bb5d-c6892727c78e" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="450,530" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Sample'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="388,218" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="870715f0-b5ac-465f-bb5d-c6892727c78e" Text="[in_HashFormula]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://codebeautify.org/sha1-hash-generator" CvType="InputBox" DesignTimeRectangle="40, 334, 393, 192" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'TEXTAREA inputTextArea'" FullSelectorArgument="&lt;webctrl id='inputTextArea' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='inputTextArea' tag='TEXTAREA' type='' class='textarea is-large is-primary' aaname='' /&gt;" Guid="cd6c78a9-39c1-46e1-860c-a2c650d18094" ImageBase64="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" InformativeScreenshot="51bbbfb9202ec9bf552dfe91754cf8a6.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHA-1 Hash Generator Online Tool' /&gt;" SearchSteps="FuzzySelector, Image, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target CvElementArea="37, 332, 397, 196" CvTextArea="161, 314, 53, 19" CvTextArgument="Sample" CvType="InputBox" DesignTimeRectangle="162, 310, 51, 24" FriendlyName="'Sample'" FullSelectorArgument="&lt;webctrl tag='I' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='I' type='' class='' aaname='Sample' check:innerText='Sample' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAADcAAAAcCAYAAADFsCezAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAG5SURBVFhH7VRBbsQgDMyr8pFKfQbPqHrhM82xh76h4r4vyLF3FwwE2zgNUbObTZSRfMAB4xkP6eDEuMgdFRe5o+Iid1Rc5J4G4wCmNzCMab0AlZyzPfQ9CTNAY737wtlVvQhyIwxGkvE5+xzkUHTr0moZnNzKsT8WUXizojmFXA9L4lS2pYJgDQsuu4B913IRoSY2HqyX67JGHFifk73xXsK9BbotxaaCeAG7FJsh+/FdWLCmNB/t5HOEELdYmoo/M+Wk0JNoGalX8oR4TfWHUtSVFpCHA2QO18pU1Nx0ThEtE06HxsETJ0RwLYYg9yjkIuJhQlB9j7yBeh3QkGuozcWoa+Z+qT6z5AKwYFZC2i9AWidNgA2gJaf+4ukeSSZNmkX9lP4kx8askIt2I7nqXXjM5ubeXwS7u5qsJliNiVwopqnLrVMKhv34AyCKs4YStByflGJbFJKQqcglQWjdsEewLZPDgnnEMdiFHtgo+SYb1yawnGuxWNlTSkVR5s8s2PIhwKnUjW2B3cmptt0Iu5PTbLsVuq+fEfaLG7y9v8LL50359v/Ymdx949zkuu8POG2kt3dCAPwC5R4RoUDf9FcAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NGetText DisplayName="Get Text 'Result of'" sap:VirtualizedContainerService.HintSize="388,157" sap2010:WorkflowViewState.IdRef="NGetText_1" ScopeIdentifier="870715f0-b5ac-465f-bb5d-c6892727c78e" TextString="[out_HashResult]" Version="V3">
+              <uix:NGetText.Target>
+                <uix:TargetAnchorable BrowserURL="https://codebeautify.org/sha1-hash-generator" CvType="InputBox" DesignTimeRectangle="40, 530, 393, 192" DesignTimeScaleFactor="1" ElementType="InputBox" FriendlyName="'3c363836cf4e16666669a25…'" FullSelectorArgument="&lt;webctrl id='outputTextArea' tag='TEXTAREA' /&gt;" FuzzySelectorArgument="&lt;webctrl id='outputTextArea' tag='TEXTAREA' type='' class='textarea is-large is-info' aaname='' /&gt;" Guid="ced6639d-ff85-49d6-b2aa-6a02db1df85d" InformativeScreenshot="d3d791ec28f0129de7d0338191651bea.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='SHA-1 Hash Generator Online Tool' /&gt;" SearchSteps="FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="4">
+                      <uix:Target DesignTimeRectangle="28, 458, 209, 72" FriendlyName="'Result of'" FullSelectorArgument="&lt;webctrl css-selector='body&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div&amp;gt;div' idx='7' parentid='app' tag='DIV' /&gt;" FuzzySelectorArgument="&lt;webctrl type='' class='columns mb-0' parentid='app' tag='DIV' aaname='   ' check:innerText='Lower Case&amp;#xD;&amp;#xA;Upper Case' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAaUAAABMCAYAAADN7qhQAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAADsMAAA7DAcdvqGQAAAU3SURBVHhe7d0/rtxEAMBh6j1QSuo0UVIklhKFA+QuFgeggS6STxGhCGk7uoi0ILESBQVKCprB439rz1vveyZ5+8br75MGxfZ41jT703gR+SYAQCZECYBsiBIA2RAlALIhSgBkQ5QAyIYoAZANUQIgG6IEQDZECYBsiBIA2RAlALIhSgBkQ5QAyIYoAZANUQIgG6LExb179y68ePEiPHr06NZRFEV4//59dydw7USJi3v8+PHJAM2NZ8+edXcC106UuLg+NnexZC6wfqLExYkSMEeUuHcvX74Mr1+/7o5ECZgnSty7NCxLQrNkLrB+osS9S8OyJDRL5gLrJ0rcuzQsS0KzZC6wfqLEvUvDsiQ0S+YC67eNKO3LsCv33UEe9uUu7HbdKKpw6M5fozQsS0KzZC6wfqJ0cftQ1iEqqlGGDlWo8mrmV5WGZUlolswF1k+ULuxQFdMgbUAaliWhWTIXWL+NR+kQqmL0Gq2fM5nfzjkeVqEYzzvxCi6+miurel66I2rWKsJ8k2aeJzk/nJ49n5c0LEtCs2QusH4bjlL7hT6ORoxJcxzD00em+XO9u+nuH3Y6yZrjHVDze9HJ34niq7uy/uddjAI2+/zjwC1Z+7LSsCwJzZK5wPptOEr1l3gajiFGxy/8GJtyf5y7L4/n+x3KMLrPaHZKJ+uQhuSE8e6rHs068bnqP093Xe1vU+O5u90taz+QNCxPnjwZzt1lPH36tLsTuHai1B01RjukfuezL9vdRxuj4z3jnVFqPkrttbn7muccPVO6Th/C9lyMUp47o1Qfl178qyueP38+Cc/cePXqlb+6AjbE67tRICbBiIGqg1T299VrNK/x+uvNjuZ0FM5FqVl3CEunXiseN9EZLrQ7oRvrDP8uN58/V31gAG6znSgNr7ji6GOSvAKbFKD90j+einOnr8fSV3j93LNRasx97vh8DGK3zuT5xyFM1kl3fpkQJeCuthElHtTS35DG/0dxYFtEiXu35DekOEQJtkuUAMiGKAGQDVECIBuiBEA2RAmAbIgSANkQJQCyIUoAZEOUAMiGKAGQDVECIBuiBEA2RAmAbIgSANkQJQCyIUoAZEOUAMiGKAGQDVECIBuitAKHqghFdeiOOvsy7Mp9d/Aw9uUu7HbdKKqQPCHAYqK0AvlFaR/KOkSTZzpUoXrYRgJXQJRWILconXwegK9AlFbg1ijVu5SiqMK+nte/Tht6de5aFNfpzo9fwcVXc2VV31ufn372IVRFEeabFK9368VxfJDJ+eMzzJ0HtkiUVuBOUaq/0Ic5zXEZmqvnriW7rfHnNL8XnfydKL666+6/1ShgJ3d2aeCWrA1cI1FagbvulMYzmp1OvHzmWly336EMo1tzuP+GNCQnjHdf9Rieo/7z9N+j/W1qPHe3u2Vt4KqJ0hqc2mV8pSjdiF1nPkrttbn7mucafV66Th/C9pydETAlSmvQ7DLS11yjL/v0enM8fn03c63Z0ZyOwrkotWsk1+u14nETneFC8py9Iajt70mzgQM2R5TWognI8TXX5Is8RqKoozD8BwNJhOau1dJXeH1Azkapkbx6S0LUnq8/t19n8vzjECbrJLs6YFtE6Ro04Zn5Mj93DSAzonQNRAm4EqJ0DUQJuBKiBEA2RAmAbIgSANkQJQCyIUoAZEOUAMiGKAGQjS+K0l///Bt+/OXP8N1PH8K33/9qGIZhbHTEDsQexC58if8dpfjBb95+DD/8/Hv48Mff4dOnT+Hz58+GYRjGxkb8/o8diD148/a3LwhTCP8BgefEU4H024QAAAAASUVORK5CYII=" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NGetText.Target>
+            </uix:NGetText>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="687, 76, 907, 680" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="c68cb6ab67ae306e569b738f45b54d18.jpg" Selector="&lt;html app='chrome.exe' title='SHA-1 Hash Generator Online Tool' /&gt;" Title="SHA-1 Hash Generator Online Tool" Url="https://codebeautify.org/sha1-hash-generator" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </Sequence>
+</Activity>
